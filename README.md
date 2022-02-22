@@ -1,3 +1,3 @@
 # YuzuKit
 
-A description of this package.
+YuzuKit is built to provide the transformation matrices required by a game engine.
