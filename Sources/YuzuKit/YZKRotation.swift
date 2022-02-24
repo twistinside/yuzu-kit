@@ -31,7 +31,7 @@ public struct YZKRotation {
     }
     */
     
-    public static func rotationMatrix(around vector: SIMD3<Float>) -> simd_float4x4 {
+    public static func matrix(around vector: SIMD3<Float>) -> simd_float4x4 {
         let rotationAroundX = simd_float4x4(
             [1,              0,             0, 0],
             [0,  cos(vector.x), sin(vector.x), 0],
