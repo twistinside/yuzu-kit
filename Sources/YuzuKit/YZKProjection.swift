@@ -1,6 +1,6 @@
 import simd
 
-struct YZKProjection {
+public struct YZKProjection {
     public static func standard(fov: Float, near: Float, far: Float, aspect: Float) -> simd_float4x4 {
         let y = 1 / tan(fov * 0.5)
         let x = y / aspect

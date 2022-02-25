@@ -1,6 +1,6 @@
 import simd
 
-struct YZKScale {
+public struct YZKScale {
     
     public static func matrix(by vector: SIMD3<Float>) -> simd_float4x4 {
         return float4x4(
