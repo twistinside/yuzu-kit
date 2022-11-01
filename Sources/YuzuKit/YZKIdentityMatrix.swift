@@ -1,6 +1,6 @@
 import simd
 
-public struct YZKIdentity {
+public struct YZKIdentityMatrix {
     
     public static let matrix2x2 = matrix_identity_float2x2
     public static let matrix3x3 = matrix_identity_float3x3

@@ -1,8 +1,8 @@
 import simd
 
-public struct YZKTranslation {
+public struct YZKTranslationMatrix {
     
-    public static func matrix(from vector: SIMD3<Float>) -> simd_float4x4 {
+    public static func from(translation vector: SIMD3<Float>) -> simd_float4x4 {
         return float4x4(
             [       1,        0,        0, 0],
             [       0,        1,        0, 0],
@@ -11,7 +11,7 @@ public struct YZKTranslation {
         )
     }
     
-    public static func matrix(tx: Float, ty: Float, tz: Float) -> simd_float4x4 {
+    public static func from(tx: Float, ty: Float, tz: Float) -> simd_float4x4 {
         return float4x4(
             [ 1,  0,  0, 0],
             [ 0,  1,  0, 0],
